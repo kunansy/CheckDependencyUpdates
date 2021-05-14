@@ -1,3 +1,3 @@
 # DependencyUpdates
 
-Check is there an update of the required package
+Check is there an update of the required packages
