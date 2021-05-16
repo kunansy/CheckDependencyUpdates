@@ -36,7 +36,11 @@ async def get_last_version(session: aiohttp.ClientSession,
     
     if resp.status == 200:
         json = await resp.json()
+        resp.close()
+
         return json['info']['version']
+
+    resp.close()
 
 
 async def worker(args: asyncio.Queue,
